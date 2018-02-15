@@ -1,0 +1,9 @@
+#comentarios-pasados,
+ .caja-comentario-pasado {
+  border: solid 1px gray;
+  margin: 2%;
+}
+
+.caja-visualizar{
+  margin-top: 5%;
+}

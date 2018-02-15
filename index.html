@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Libro de visitas</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="title col-lg-4 col-lg-offset-4">
+        <h1>Libro de visitas</h1>
+      </div>
+      <section class="comentarios-agregados col-lg-10 col-lg-offset-1">
+        <h2>Comentarios pasados</h2>
+        <div id="comentarios-pasados">
+          <div class="caja-comentario-pasado">
+            <p class="texto">Me encanta Front-end</p>
+          </div>
+        </div>
+      </section>
+      <section class="agregar-comentario col-lg-10 col-lg-offset-1">
+        <h2>Agregar nuevo comentario</h2>
+        <div class="row">
+          <div class="botones-estilo col-lg-10 col-lg-offset-1">
+            <button id="btn-large" type="button" class="btn btn-default">Large</button>
+            <button id="btn-medium" type="button" class="btn btn-default">Medium</button>
+            <button id="btn-small" type="button" class="btn btn-default">Small</button>
+            <button id="btn-texto" type="button" class="btn btn-default">Color de texto</button>
+            <button id="btn-fondo" type="button" class="btn btn-default">Color de fondo</button>
+            <button id="btn-izquierda" type="button" class="btn btn-default">Izquierda</button>
+            <button id="btn-centro" type="button" class="btn btn-default">Centrar</button>
+            <button id="btn-derecha" type="button" class="btn btn-default">Derecha</button>
+          </div>
+        </div>
+        <div class="row">
+          <textarea id="escribiendo-comentario" class="form-control" rows="3"></textarea>
+          <button id="btn-agregar" type="button" class="btn btn-default">Agregar</button>
+        </div>
+        <div class="row">
+          <div class="caja-visualizar">
+              <p id="mi-comentario"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <!-- Bootstrap y JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="crud.js"></script>
+  </body>
+</html>
