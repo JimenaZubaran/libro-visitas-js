@@ -7,3 +7,7 @@
 .caja-visualizar{
   margin-top: 5%;
 }
+
+.btn-delete {
+  display: block;
+}

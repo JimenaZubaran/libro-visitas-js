@@ -12,7 +12,7 @@ var commentsData = [
     style: {
       color : "yellow",
       backgroundColor : "black",
-      fontSize : "40px"
+      fontSize : "20px"
     }
   },
 ];
@@ -39,8 +39,14 @@ function creatDomCommentsWithData(data){
   var contentComment = data.content; // var contentComment = commentsData[i].content;
   console.log(contentComment);
   var commentContainerDom = document.createElement("div");
+  var btnDelete = document.createElement("button");
   commentContainerDom.innerHTML = contentComment;
   commentContainerDom.className = "caja-comentario-pasado";
+  btnDelete.innerHTML = "X";
+  btnDelete.className = "btn-delete";
+//btnDelete.setAttribute("id","button-delete");
+  btnDelete.style.fontSize = "45px"
+  commentContainerDom.appendChild(btnDelete);
   Object.assign ( commentContainerDom.style, data.style);
   return commentContainerDom;
   console.log(commentContainerDom);
@@ -61,4 +67,17 @@ function addNewComment() {
   Object.assign(newComment.style, textP.style);
   commentsData.unshift(newComment);
   drawDataCommets()
+}
+
+
+var btnDelete = document.getElementsByClassName("btn-delete");
+console.log(btnDelete);
+//var btnId = document.getElementById("button-delete");
+//console.log(btnId);
+
+
+btnDelete.addEventListener("click", deleteButtonComment);
+function deleteButtonComment(){
+  var boxPasstComment = document.getElementsByClassName("caja-comentario-pasado");
+  boxPasstComment.style.display = "none";
 }
