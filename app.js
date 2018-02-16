@@ -78,7 +78,7 @@ function rightText(){
   textP.style.textAlign = "right";
 }
 
-//Boton para agregar comentario (variabley evento)
+/*Boton para agregar comentario (variabley evento)
 var btnAdd = document.getElementById("btn-agregar");
 btnAdd.addEventListener("click",addComment);
 //Funcion agregar
@@ -108,3 +108,4 @@ var atributo = textP.getAttribute("style");
 console.log(atributo);
 textComments.setAttribute("style", atributo);
 }
+*/
